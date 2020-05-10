@@ -56,7 +56,7 @@ if( __name__ == "__main__"):
         else:
             print("------Invalid password-----")
     elif(key==2):
-        print("For adding a donation enter 1,for retriving a data enter 2, for adding the amount to data 3,for retriving all data 4 ,EXIT 5")
+        print("For adding a donation enter 1,for retriving a data enter 2, for adding the amount to data 3,EXIT 5")
         while(1):
             comand=int(input())
             if(comand==1):
