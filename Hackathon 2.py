@@ -21,7 +21,7 @@ def add_data(data,f_donar,f_amount):
         print("Enter the amount to be added :")
         c=int(input())
         for line in fileinput.input(data):
-            line=line.replace(str(f_donar[len(f_amount)-1])+" : "+ str(f_amount[len(f_amount)-1]),str(f_donar[len(f_amount)-1]+c)+" : "+ str(f_amount[len(f_amount)-1]))
+            line=line.replace(str(f_donar[len(f_amount)-1])+" : "+ str(f_amount[len(f_amount)-1]),str(f_donar[len(f_amount)-1])+" : "+ str(f_amount[len(f_amount)-1]+c))
         f_amount[b]=f_amount[b]+c
     else:
         print("entered ID does not exist")
@@ -56,7 +56,6 @@ if( __name__ == "__main__"):
         else:
             print("------Invalid password-----")
     elif(key==2):
-        
         while(1):
             print("For adding a donation enter 1,for retriving a data enter 2, for adding the amount to data 3,EXIT 5")
             comand=int(input())
